@@ -45,7 +45,8 @@ plot(TS,  type="l",
      screens=1, 
      ylim=range(df[,c(7,8,9)]))
 
-legend("topright", names(HPC2[,c(7,8,9)]), lty=1, cex=.5, border=NULL, col=c("black", "red", "blue"))
+legend("topright", names(HPC2[,c(7,8,9)]), lty=1, cex=.5, border=NULL, 
+       col=c("black", "red", "blue"))
 
 #GRP
 TS <- zoo(HPC2$GRP, HPC2$DT)
